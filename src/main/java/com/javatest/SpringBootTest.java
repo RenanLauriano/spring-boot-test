@@ -1,13 +1,15 @@
-package com.example.demo;
+package com.javatest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-public class DemoApplication {
+@EnableScheduling
+public class SpringBootTest {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SpringBootTest.class, args);
 	}
 
 }
