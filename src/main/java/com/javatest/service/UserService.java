@@ -1,11 +1,15 @@
 package com.javatest.service;
 
+import com.javatest.controller.UserController;
 import com.javatest.domain.randomuser.ResponseUser;
 import com.javatest.domain.randomuser.ResponseUserList;
 import com.javatest.domain.user.User;
 import com.javatest.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.Setter;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -16,17 +20,22 @@ import java.util.Optional;
 
 @Service
 @AllArgsConstructor
+@Setter
 public class UserService {
-
+    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
     private final UserRepository userRepository;
     private final EmailService emailService;
     private final String randomUserEndpointUrl = "https://randomuser.me/api";
-    private final WebClient webClient = WebClient.create(randomUserEndpointUrl);
     private final ModelMapper modelMapper;
 
+    private WebClient webClient = WebClient.create(randomUserEndpointUrl);
+
     @Scheduled(fixedRate = 10000)
-    private void fetchAndSaveUser() {
+    public void fetchAndSaveUser() {
+        logger.info("Starting fetchAndSaveUser");
+        logger.info("Fetching user from RandomApi");
         Optional<ResponseUser> userResponse = fetchUserFromRandomApi();
+        logger.info("User Fetched: {}", userResponse.toString());
         userResponse.ifPresent(userRandom -> {
             User user = modelMapper.map(userRandom, User.class);
             createOrEditUser(user);
@@ -51,16 +60,20 @@ public class UserService {
         return responseUser;
     }
 
-    private void createOrEditUser(User user) {
+    public void createOrEditUser(User user) {
+        logger.info("Checking if user already exists by Phone ({}) or Cell {}", user.getPhone(), user.getCell());
         Optional<User> existingUser = userRepository.findByPhoneOrCell(user.getPhone(), user.getCell()).stream().findFirst();
         existingUser.ifPresent(userToUpdate -> {
+            logger.info("User already exists, updating in DB");
             user.setId(userToUpdate.getId());
+            logger.info("Sending email about User Data Change");
             emailService.sendEmail(user.toString());
         });
         userRepository.save(user);
     }
 
     public List<User> getUsers(int limit, int offset) {
+        logger.info("Fetching Users from Database: Parameters - Limit: {} - Offset: {}", limit, offset);
         return userRepository.findAll(limit, offset);
     }
 

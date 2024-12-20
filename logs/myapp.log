@@ -1,0 +1,85 @@
+2024-12-20T00:00:00.325-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [346e5ce0] [02ea60ce-13] Response 200 OK
+2024-12-20T00:00:00.350-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [346e5ce0] [02ea60ce-13] Decoded [com.javatest.domain.randomuser.ResponseUserList@65e9bf61]
+2024-12-20T00:00:09.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [21452717] HTTP GET https://randomuser.me/api
+2024-12-20T00:00:10.052-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [21452717] [02ea60ce-14] Response 200 OK
+2024-12-20T00:00:10.054-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [21452717] [02ea60ce-14] Decoded [com.javatest.domain.randomuser.ResponseUserList@8a972d4]
+2024-12-20T00:00:19.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [6da462d8] HTTP GET https://randomuser.me/api
+2024-12-20T00:00:20.094-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [6da462d8] [02ea60ce-15] Response 200 OK
+2024-12-20T00:00:20.100-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [6da462d8] [02ea60ce-15] Decoded [com.javatest.domain.randomuser.ResponseUserList@1feb57f4]
+2024-12-20T00:00:29.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [6c13e4aa] HTTP GET https://randomuser.me/api
+2024-12-20T00:00:30.039-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [6c13e4aa] [02ea60ce-16] Response 200 OK
+2024-12-20T00:00:30.041-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [6c13e4aa] [02ea60ce-16] Decoded [com.javatest.domain.randomuser.ResponseUserList@6fbbb207]
+2024-12-20T00:00:39.875-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1178f5f3] HTTP GET https://randomuser.me/api
+2024-12-20T00:00:40.139-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1178f5f3] [02ea60ce-17] Response 200 OK
+2024-12-20T00:00:40.141-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1178f5f3] [02ea60ce-17] Decoded [com.javatest.domain.randomuser.ResponseUserList@12654571]
+2024-12-20T00:00:49.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [7ab79734] HTTP GET https://randomuser.me/api
+2024-12-20T00:00:50.075-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [7ab79734] [02ea60ce-18] Response 200 OK
+2024-12-20T00:00:50.077-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [7ab79734] [02ea60ce-18] Decoded [com.javatest.domain.randomuser.ResponseUserList@7e6fe607]
+2024-12-20T00:00:59.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1866959c] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:00.058-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1866959c] [02ea60ce-19] Response 200 OK
+2024-12-20T00:01:00.060-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1866959c] [02ea60ce-19] Decoded [com.javatest.domain.randomuser.ResponseUserList@1015e75]
+2024-12-20T00:01:09.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [2c5aa965] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:10.048-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [2c5aa965] [02ea60ce-20] Response 200 OK
+2024-12-20T00:01:10.050-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [2c5aa965] [02ea60ce-20] Decoded [com.javatest.domain.randomuser.ResponseUserList@33f2e662]
+2024-12-20T00:01:19.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1c7e57db] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:20.035-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1c7e57db] [02ea60ce-21] Response 200 OK
+2024-12-20T00:01:20.043-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1c7e57db] [02ea60ce-21] Decoded [com.javatest.domain.randomuser.ResponseUserList@4005948f]
+2024-12-20T00:01:29.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [39b702ab] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:30.076-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [39b702ab] [02ea60ce-22] Response 200 OK
+2024-12-20T00:01:30.078-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [39b702ab] [02ea60ce-22] Decoded [com.javatest.domain.randomuser.ResponseUserList@69c7a9d8]
+2024-12-20T00:01:39.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [73b66b6a] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:40.045-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [73b66b6a] [02ea60ce-23] Response 200 OK
+2024-12-20T00:01:40.046-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [73b66b6a] [02ea60ce-23] Decoded [com.javatest.domain.randomuser.ResponseUserList@62c25bc1]
+2024-12-20T00:01:49.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [437bda45] HTTP GET https://randomuser.me/api
+2024-12-20T00:01:50.054-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [437bda45] [02ea60ce-24] Response 200 OK
+2024-12-20T00:01:50.057-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [437bda45] [02ea60ce-24] Decoded [com.javatest.domain.randomuser.ResponseUserList@6f5b7a67]
+2024-12-20T00:01:59.875-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [7320e2bb] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:00.087-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [7320e2bb] [02ea60ce-25] Response 200 OK
+2024-12-20T00:02:00.089-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [7320e2bb] [02ea60ce-25] Decoded [com.javatest.domain.randomuser.ResponseUserList@52ad8d83]
+2024-12-20T00:02:09.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [75d39663] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:10.050-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [75d39663] [02ea60ce-26] Response 200 OK
+2024-12-20T00:02:10.052-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [75d39663] [02ea60ce-26] Decoded [com.javatest.domain.randomuser.ResponseUserList@40365a13]
+2024-12-20T00:02:19.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [6837f84c] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:20.082-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [6837f84c] [02ea60ce-27] Response 200 OK
+2024-12-20T00:02:20.084-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [6837f84c] [02ea60ce-27] Decoded [com.javatest.domain.randomuser.ResponseUserList@126f329e]
+2024-12-20T00:02:29.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [433fe66] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:30.046-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [433fe66] [02ea60ce-28] Response 200 OK
+2024-12-20T00:02:30.048-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [433fe66] [02ea60ce-28] Decoded [com.javatest.domain.randomuser.ResponseUserList@64f0e8c5]
+2024-12-20T00:02:39.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [22045743] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:40.047-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [22045743] [02ea60ce-29] Response 200 OK
+2024-12-20T00:02:40.053-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [22045743] [02ea60ce-29] Decoded [com.javatest.domain.randomuser.ResponseUserList@2047ffd4]
+2024-12-20T00:02:49.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [d867c15] HTTP GET https://randomuser.me/api
+2024-12-20T00:02:50.059-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [d867c15] [02ea60ce-30] Response 200 OK
+2024-12-20T00:02:50.061-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [d867c15] [02ea60ce-30] Decoded [com.javatest.domain.randomuser.ResponseUserList@73309303]
+2024-12-20T00:02:59.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [442769a6] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:00.043-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [442769a6] [02ea60ce-31] Response 200 OK
+2024-12-20T00:03:00.044-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [442769a6] [02ea60ce-31] Decoded [com.javatest.domain.randomuser.ResponseUserList@194b1c9e]
+2024-12-20T00:03:09.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [6308a15a] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:10.039-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [6308a15a] [02ea60ce-32] Response 200 OK
+2024-12-20T00:03:10.040-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [6308a15a] [02ea60ce-32] Decoded [com.javatest.domain.randomuser.ResponseUserList@51765257]
+2024-12-20T00:03:19.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [4a83496d] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:20.146-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [4a83496d] [02ea60ce-33] Response 200 OK
+2024-12-20T00:03:20.147-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [4a83496d] [02ea60ce-33] Decoded [com.javatest.domain.randomuser.ResponseUserList@79ca9dfd]
+2024-12-20T00:03:29.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [977f5f9] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:30.080-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [977f5f9] [02ea60ce-34] Response 200 OK
+2024-12-20T00:03:30.082-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [977f5f9] [02ea60ce-34] Decoded [com.javatest.domain.randomuser.ResponseUserList@77a1ba42]
+2024-12-20T00:03:39.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [4fae8cdd] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:40.042-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [4fae8cdd] [02ea60ce-35] Response 200 OK
+2024-12-20T00:03:40.044-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [4fae8cdd] [02ea60ce-35] Decoded [com.javatest.domain.randomuser.ResponseUserList@44df008e]
+2024-12-20T00:03:49.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1495765f] HTTP GET https://randomuser.me/api
+2024-12-20T00:03:50.059-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1495765f] [02ea60ce-36] Response 200 OK
+2024-12-20T00:03:50.060-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1495765f] [02ea60ce-36] Decoded [com.javatest.domain.randomuser.ResponseUserList@1f622645]
+2024-12-20T00:03:59.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [4715b6b8] HTTP GET https://randomuser.me/api
+2024-12-20T00:04:00.041-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [4715b6b8] [02ea60ce-37] Response 200 OK
+2024-12-20T00:04:00.042-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [4715b6b8] [02ea60ce-37] Decoded [com.javatest.domain.randomuser.ResponseUserList@70689457]
+2024-12-20T00:04:09.875-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1de5ae7b] HTTP GET https://randomuser.me/api
+2024-12-20T00:04:10.287-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1de5ae7b] [02ea60ce-38] Response 200 OK
+2024-12-20T00:04:10.288-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1de5ae7b] [02ea60ce-38] Decoded [com.javatest.domain.randomuser.ResponseUserList@447f4da6]
+2024-12-20T00:04:19.874-03:00 DEBUG 53344 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [270f0c5e] HTTP GET https://randomuser.me/api
+2024-12-20T00:04:20.047-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [270f0c5e] [02ea60ce-39] Response 200 OK
+2024-12-20T00:04:20.049-03:00 DEBUG 53344 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [270f0c5e] [02ea60ce-39] Decoded [com.javatest.domain.randomuser.ResponseUserList@450ae5a2]
+2024-12-20T00:04:20.406-03:00  INFO 53344 --- [Spring Boot Test] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-20T00:04:20.409-03:00  INFO 53344 --- [Spring Boot Test] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-20T00:04:22.423-03:00  INFO 53344 --- [Spring Boot Test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:04:22.424-03:00  INFO 53344 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:04:22.427-03:00  INFO 53344 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
