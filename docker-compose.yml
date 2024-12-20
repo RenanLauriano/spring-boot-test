@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  spring-boot-test:
+    container_name: spring-boot-test
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
