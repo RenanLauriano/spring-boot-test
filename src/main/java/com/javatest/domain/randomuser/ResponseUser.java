@@ -9,12 +9,14 @@ import com.javatest.domain.user.Registered;
 import com.javatest.domain.user.location.Location;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Getter
 @Setter
+@ToString
 public class ResponseUser {
     private String gender;
     private Name name;

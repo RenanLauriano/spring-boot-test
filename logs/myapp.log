@@ -1,0 +1,395 @@
+2024-12-20T00:36:18.573-03:00  INFO 69236 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Starting SpringBootTest using Java 21.0.5 with PID 69236 (/home/rlara/Learning/spring-boot-test/target/classes started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:36:18.575-03:00  INFO 69236 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:36:19.553-03:00  INFO 69236 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:36:19.843-03:00  INFO 69236 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
+2024-12-20T00:36:20.362-03:00  INFO 69236 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:36:20.410-03:00  INFO 69236 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:36:20.438-03:00  INFO 69236 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:36:20.677-03:00  INFO 69236 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:36:20.706-03:00  INFO 69236 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:36:20.865-03:00  INFO 69236 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:36:20.868-03:00  INFO 69236 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:36:20.925-03:00  INFO 69236 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:36:21.634-03:00  INFO 69236 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:36:21.687-03:00  INFO 69236 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:36:21.700-03:00  WARN 69236 --- [Spring Boot Test] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+2024-12-20T00:36:21.700-03:00  INFO 69236 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:36:21.703-03:00  INFO 69236 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:36:21.707-03:00  INFO 69236 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T00:36:21.715-03:00  INFO 69236 --- [Spring Boot Test] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-20T00:36:21.731-03:00 ERROR 69236 --- [Spring Boot Test] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.javatest.SpringBootTest.main(SpringBootTest.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1333) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:118) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1327) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 32 common frames omitted
+Caused by: java.lang.NoSuchMethodException: com.javatest.service.UserService.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:114) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 33 common frames omitted
+
+2024-12-20T00:37:14.079-03:00  INFO 69814 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Starting SpringBootTest using Java 21.0.5 with PID 69814 (/home/rlara/Learning/spring-boot-test/target/classes started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:37:14.081-03:00  INFO 69814 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:37:14.681-03:00  INFO 69814 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:37:14.799-03:00  INFO 69814 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2024-12-20T00:37:15.244-03:00  INFO 69814 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:37:15.282-03:00  INFO 69814 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:37:15.305-03:00  INFO 69814 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:37:15.527-03:00  INFO 69814 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:37:15.558-03:00  INFO 69814 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:37:15.700-03:00  INFO 69814 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:37:15.701-03:00  INFO 69814 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:37:15.751-03:00  INFO 69814 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:37:16.441-03:00  INFO 69814 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:37:16.496-03:00  INFO 69814 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:37:16.511-03:00  WARN 69814 --- [Spring Boot Test] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+2024-12-20T00:37:16.512-03:00  INFO 69814 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:37:16.513-03:00  INFO 69814 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:37:16.515-03:00  INFO 69814 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T00:37:16.522-03:00  INFO 69814 --- [Spring Boot Test] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-20T00:37:16.537-03:00 ERROR 69814 --- [Spring Boot Test] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/controller/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.javatest.SpringBootTest.main(SpringBootTest.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/home/rlara/Learning/spring-boot-test/target/classes/com/javatest/service/UserService.class]: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1333) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.javatest.service.UserService]: No default constructor found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:118) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1327) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 32 common frames omitted
+Caused by: java.lang.NoSuchMethodException: com.javatest.service.UserService.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3761) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2930) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:114) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 33 common frames omitted
+
+2024-12-20T00:40:15.113-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.DemoApplicationTests        : Starting DemoApplicationTests using Java 21.0.5 with PID 71372 (started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:40:15.114-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.DemoApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:40:15.934-03:00  INFO 71372 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:40:16.091-03:00  INFO 71372 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2024-12-20T00:40:16.580-03:00  INFO 71372 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:40:16.642-03:00  INFO 71372 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:40:16.699-03:00  INFO 71372 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:40:17.049-03:00  INFO 71372 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:40:17.079-03:00  INFO 71372 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:40:17.285-03:00  INFO 71372 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:40:17.288-03:00  INFO 71372 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:40:17.347-03:00  INFO 71372 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:40:18.237-03:00  INFO 71372 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:40:18.328-03:00  INFO 71372 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:40:18.749-03:00  INFO 71372 --- [Spring Boot Test] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-20T00:40:19.815-03:00 DEBUG 71372 --- [Spring Boot Test] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2024-12-20T00:40:19.831-03:00 DEBUG 71372 --- [Spring Boot Test] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-20T00:40:19.865-03:00 DEBUG 71372 --- [Spring Boot Test] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2024-12-20T00:40:19.920-03:00 DEBUG 71372 --- [Spring Boot Test] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-20T00:40:20.107-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.DemoApplicationTests        : Started DemoApplicationTests in 5.602 seconds (process running for 6.953)
+2024-12-20T00:40:20.114-03:00  INFO 71372 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:40:20.119-03:00  INFO 71372 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:40:20.183-03:00 DEBUG 71372 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [2938b261] HTTP GET https://randomuser.me/api
+2024-12-20T00:40:21.892-03:00 DEBUG 71372 --- [Spring Boot Test] [reactor-http-epoll-2] o.s.w.r.f.client.ExchangeFunctions       : [2938b261] [c056c3ad-1] Response 200 OK
+2024-12-20T00:40:21.942-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Fetching Users from Database: Parameters - Limit: 10 - Offset: 0
+2024-12-20T00:40:21.971-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Checking if user already exists by Phone (123456789) or Cell 987654321
+2024-12-20T00:40:22.004-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:40:22.004-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:40:22.005-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@73f83bff]
+2024-12-20T00:40:22.056-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Checking if user already exists by Phone (null) or Cell null
+2024-12-20T00:40:22.065-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Checking if user already exists by Phone (123456789) or Cell 987654321
+2024-12-20T00:40:22.065-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : User already exists, updating in DB
+2024-12-20T00:40:22.065-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.UserService         : Sending email about User Data Change
+2024-12-20T00:40:22.195-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.EmailService        : Building the email message
+2024-12-20T00:40:22.199-03:00  INFO 71372 --- [Spring Boot Test] [main] com.javatest.service.EmailService        : Email sent with subject (User update - Differences with previous data copy) and content (Test email content)
+2024-12-20T00:40:22.206-03:00 DEBUG 71372 --- [Spring Boot Test] [reactor-http-epoll-2] org.springframework.web.HttpLogging      : [2938b261] [c056c3ad-1] Decoded [com.javatest.domain.randomuser.ResponseUserList@9c51651]
+2024-12-20T00:40:22.208-03:00  INFO 71372 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@39caa4bc]
+2024-12-20T00:40:22.217-03:00  INFO 71372 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone ((43) 3416-4824) or Cell (12) 6445-2131
+2024-12-20T00:40:22.579-03:00  INFO 71372 --- [Spring Boot Test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:40:22.581-03:00  INFO 71372 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:40:22.593-03:00  INFO 71372 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T00:40:31.291-03:00  INFO 71597 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Starting SpringBootTest using Java 21.0.5 with PID 71597 (/home/rlara/Learning/spring-boot-test/target/classes started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:40:31.294-03:00  INFO 71597 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:40:32.278-03:00  INFO 71597 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:40:32.498-03:00  INFO 71597 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interface.
+2024-12-20T00:40:33.198-03:00  INFO 71597 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:40:33.237-03:00  INFO 71597 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:40:33.264-03:00  INFO 71597 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:40:33.536-03:00  INFO 71597 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:40:33.589-03:00  INFO 71597 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:40:33.775-03:00  INFO 71597 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:40:33.778-03:00  INFO 71597 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:40:33.832-03:00  INFO 71597 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:40:34.770-03:00  INFO 71597 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:40:34.838-03:00  INFO 71597 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:40:35.146-03:00  INFO 71597 --- [Spring Boot Test] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-20T00:40:35.881-03:00 DEBUG 71597 --- [Spring Boot Test] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2024-12-20T00:40:35.896-03:00 DEBUG 71597 --- [Spring Boot Test] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-20T00:40:35.924-03:00 DEBUG 71597 --- [Spring Boot Test] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2024-12-20T00:40:35.952-03:00 DEBUG 71597 --- [Spring Boot Test] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-20T00:40:36.159-03:00  INFO 71597 --- [Spring Boot Test] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2024-12-20T00:40:36.175-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:40:36.176-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:40:36.180-03:00  INFO 71597 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Started SpringBootTest in 5.546 seconds (process running for 6.21)
+2024-12-20T00:40:36.223-03:00 DEBUG 71597 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [28fa2f95] HTTP GET https://randomuser.me/api
+2024-12-20T00:40:36.931-03:00 DEBUG 71597 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [28fa2f95] [94e36360-1] Response 200 OK
+2024-12-20T00:40:37.006-03:00 DEBUG 71597 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [28fa2f95] [94e36360-1] Decoded [com.javatest.domain.randomuser.ResponseUserList@48926fa3]
+2024-12-20T00:40:37.007-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@6df2996e]
+2024-12-20T00:40:37.024-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (0112340 998 6445) or Cell 07292 727388
+2024-12-20T00:40:46.169-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:40:46.169-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:40:46.170-03:00 DEBUG 71597 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1f531a11] HTTP GET https://randomuser.me/api
+2024-12-20T00:40:46.347-03:00 DEBUG 71597 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1f531a11] [94e36360-2] Response 200 OK
+2024-12-20T00:40:46.349-03:00 DEBUG 71597 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1f531a11] [94e36360-2] Decoded [com.javatest.domain.randomuser.ResponseUserList@23640d13]
+2024-12-20T00:40:46.350-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@30fbd8de]
+2024-12-20T00:40:46.350-03:00  INFO 71597 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (04-27-82-35-81) or Cell 06-22-75-86-88
+2024-12-20T00:40:50.103-03:00  INFO 71597 --- [Spring Boot Test] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-20T00:40:50.106-03:00  INFO 71597 --- [Spring Boot Test] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-20T00:40:52.118-03:00  INFO 71597 --- [Spring Boot Test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:40:52.119-03:00  INFO 71597 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:40:52.127-03:00  INFO 71597 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T00:41:22.562-03:00  INFO 72108 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Starting SpringBootTest using Java 21.0.5 with PID 72108 (/home/rlara/Learning/spring-boot-test/target/classes started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:41:22.564-03:00  INFO 72108 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:41:23.252-03:00  INFO 72108 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:41:23.464-03:00  INFO 72108 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interface.
+2024-12-20T00:41:24.050-03:00  INFO 72108 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:41:24.101-03:00  INFO 72108 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:41:24.127-03:00  INFO 72108 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:41:24.387-03:00  INFO 72108 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:41:24.414-03:00  INFO 72108 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:41:24.620-03:00  INFO 72108 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:41:24.623-03:00  INFO 72108 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:41:24.697-03:00  INFO 72108 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:41:25.499-03:00  INFO 72108 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:41:25.555-03:00  INFO 72108 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:41:25.871-03:00  INFO 72108 --- [Spring Boot Test] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-20T00:41:26.519-03:00 DEBUG 72108 --- [Spring Boot Test] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2024-12-20T00:41:26.533-03:00 DEBUG 72108 --- [Spring Boot Test] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-20T00:41:26.562-03:00 DEBUG 72108 --- [Spring Boot Test] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2024-12-20T00:41:26.594-03:00 DEBUG 72108 --- [Spring Boot Test] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-20T00:41:26.824-03:00  INFO 72108 --- [Spring Boot Test] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2024-12-20T00:41:26.839-03:00  INFO 72108 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:41:26.840-03:00  INFO 72108 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:41:26.841-03:00  INFO 72108 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Started SpringBootTest in 4.803 seconds (process running for 5.318)
+2024-12-20T00:41:26.880-03:00 DEBUG 72108 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [28fa2f95] HTTP GET https://randomuser.me/api
+2024-12-20T00:41:27.587-03:00 DEBUG 72108 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [28fa2f95] [a73e8962-1] Response 200 OK
+2024-12-20T00:41:27.656-03:00 DEBUG 72108 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [28fa2f95] [a73e8962-1] Decoded [com.javatest.domain.randomuser.ResponseUserList@bf75eda]
+2024-12-20T00:41:27.657-03:00  INFO 72108 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@6df2996e]
+2024-12-20T00:41:27.679-03:00  INFO 72108 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone ((89) 5111-4828) or Cell (00) 0419-2708
+2024-12-20T00:41:27.799-03:00  INFO 72108 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:41:35.969-03:00  INFO 72108 --- [Spring Boot Test] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-20T00:41:35.971-03:00  INFO 72108 --- [Spring Boot Test] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-20T00:41:37.984-03:00  INFO 72108 --- [Spring Boot Test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:41:37.986-03:00  INFO 72108 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:41:37.989-03:00  INFO 72108 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T00:41:48.541-03:00  INFO 72329 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Starting SpringBootTest using Java 21.0.5 with PID 72329 (/home/rlara/Learning/spring-boot-test/target/classes started by rlara in /home/rlara/Learning/spring-boot-test)
+2024-12-20T00:41:48.543-03:00  INFO 72329 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : No active profile set, falling back to 1 default profile: "default"
+2024-12-20T00:41:49.096-03:00  INFO 72329 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T00:41:49.230-03:00  INFO 72329 --- [Spring Boot Test] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2024-12-20T00:41:49.798-03:00  INFO 72329 --- [Spring Boot Test] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T00:41:49.833-03:00  INFO 72329 --- [Spring Boot Test] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T00:41:49.859-03:00  INFO 72329 --- [Spring Boot Test] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T00:41:50.107-03:00  INFO 72329 --- [Spring Boot Test] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T00:41:50.145-03:00  INFO 72329 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T00:41:50.307-03:00  INFO 72329 --- [Spring Boot Test] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-20T00:41:50.309-03:00  INFO 72329 --- [Spring Boot Test] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T00:41:50.357-03:00  INFO 72329 --- [Spring Boot Test] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T00:41:51.069-03:00  INFO 72329 --- [Spring Boot Test] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T00:41:51.119-03:00  INFO 72329 --- [Spring Boot Test] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:41:51.360-03:00  INFO 72329 --- [Spring Boot Test] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-20T00:41:52.040-03:00 DEBUG 72329 --- [Spring Boot Test] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2024-12-20T00:41:52.053-03:00 DEBUG 72329 --- [Spring Boot Test] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-20T00:41:52.085-03:00 DEBUG 72329 --- [Spring Boot Test] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2024-12-20T00:41:52.113-03:00 DEBUG 72329 --- [Spring Boot Test] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-20T00:41:52.311-03:00  INFO 72329 --- [Spring Boot Test] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2024-12-20T00:41:52.323-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:41:52.324-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:41:52.326-03:00  INFO 72329 --- [Spring Boot Test] [main] com.javatest.SpringBootTest              : Started SpringBootTest in 4.18 seconds (process running for 4.625)
+2024-12-20T00:41:52.362-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [7cdd43b] HTTP GET https://randomuser.me/api
+2024-12-20T00:41:53.049-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [7cdd43b] [247c27e5-1] Response 200 OK
+2024-12-20T00:41:53.116-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [7cdd43b] [247c27e5-1] Decoded [com.javatest.domain.randomuser.ResponseUserList@709668f4]
+2024-12-20T00:41:53.117-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@75695451]
+2024-12-20T00:41:53.132-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone ((081) 7621893) or Cell (06) 49564161
+2024-12-20T00:41:53.222-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:41:53.287-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:02.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:02.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:02.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [509f47d] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:02.519-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [509f47d] [247c27e5-2] Response 200 OK
+2024-12-20T00:42:02.530-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [509f47d] [247c27e5-2] Decoded [com.javatest.domain.randomuser.ResponseUserList@38d96a69]
+2024-12-20T00:42:02.532-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@6417c3f9]
+2024-12-20T00:42:02.533-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone ((640)-822-4734) or Cell (894)-757-2529
+2024-12-20T00:42:02.537-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:02.557-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:12.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:12.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:12.321-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [1a27dfd8] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:12.500-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [1a27dfd8] [247c27e5-3] Response 200 OK
+2024-12-20T00:42:12.503-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [1a27dfd8] [247c27e5-3] Decoded [com.javatest.domain.randomuser.ResponseUserList@7941392b]
+2024-12-20T00:42:12.503-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@1a0b86a2]
+2024-12-20T00:42:12.504-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (987-718-133) or Cell 640-403-891
+2024-12-20T00:42:12.505-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:12.507-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:22.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:22.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:22.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [8980c9c] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:22.499-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [8980c9c] [247c27e5-4] Response 200 OK
+2024-12-20T00:42:22.501-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [8980c9c] [247c27e5-4] Decoded [com.javatest.domain.randomuser.ResponseUserList@4ad008dd]
+2024-12-20T00:42:22.501-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@237cc872]
+2024-12-20T00:42:22.501-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (08-788-062) or Cell 044-249-50-86
+2024-12-20T00:42:22.502-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:22.505-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:32.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:32.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:32.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [354d9d4a] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:32.492-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [354d9d4a] [247c27e5-5] Response 200 OK
+2024-12-20T00:42:32.494-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [354d9d4a] [247c27e5-5] Decoded [com.javatest.domain.randomuser.ResponseUserList@4c652389]
+2024-12-20T00:42:32.495-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@17d04da9]
+2024-12-20T00:42:32.495-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (05-422-571) or Cell 042-043-66-54
+2024-12-20T00:42:32.496-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:32.499-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:42.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:42.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:42.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [261c0b2e] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:42.481-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [261c0b2e] [247c27e5-6] Response 200 OK
+2024-12-20T00:42:42.482-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [261c0b2e] [247c27e5-6] Decoded [com.javatest.domain.randomuser.ResponseUserList@72d9f0a4]
+2024-12-20T00:42:42.483-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@9c6c0a6]
+2024-12-20T00:42:42.484-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (06-029-268) or Cell 042-633-80-88
+2024-12-20T00:42:42.485-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:42.488-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:42:52.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:42:52.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:42:52.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [4edf87cc] HTTP GET https://randomuser.me/api
+2024-12-20T00:42:52.476-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [4edf87cc] [247c27e5-7] Response 200 OK
+2024-12-20T00:42:52.477-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [4edf87cc] [247c27e5-7] Decoded [com.javatest.domain.randomuser.ResponseUserList@45e0429f]
+2024-12-20T00:42:52.478-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@5ac91419]
+2024-12-20T00:42:52.478-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (019467 27499) or Cell 07947 317952
+2024-12-20T00:42:52.479-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:42:52.481-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:43:02.319-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Starting fetchAndSaveUser
+2024-12-20T00:43:02.320-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Fetching user from RandomApi
+2024-12-20T00:43:02.320-03:00 DEBUG 72329 --- [Spring Boot Test] [scheduling-1] o.s.w.r.f.client.ExchangeFunctions       : [328d86c9] HTTP GET https://randomuser.me/api
+2024-12-20T00:43:02.484-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] o.s.w.r.f.client.ExchangeFunctions       : [328d86c9] [247c27e5-8] Response 200 OK
+2024-12-20T00:43:02.486-03:00 DEBUG 72329 --- [Spring Boot Test] [reactor-http-epoll-3] org.springframework.web.HttpLogging      : [328d86c9] [247c27e5-8] Decoded [com.javatest.domain.randomuser.ResponseUserList@4ade586d]
+2024-12-20T00:43:02.486-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User Fetched: Optional[com.javatest.domain.randomuser.ResponseUser@b2bf811]
+2024-12-20T00:43:02.487-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Checking if user already exists by Phone (078 890 40 04) or Cell 079 511 31 59
+2024-12-20T00:43:02.488-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : Saving User to Database
+2024-12-20T00:43:02.491-03:00  INFO 72329 --- [Spring Boot Test] [scheduling-1] com.javatest.service.UserService         : User saved
+2024-12-20T00:43:09.678-03:00  INFO 72329 --- [Spring Boot Test] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-20T00:43:09.681-03:00  INFO 72329 --- [Spring Boot Test] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-20T00:43:11.691-03:00  INFO 72329 --- [Spring Boot Test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T00:43:11.693-03:00  INFO 72329 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T00:43:11.695-03:00  INFO 72329 --- [Spring Boot Test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
