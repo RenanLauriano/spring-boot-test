@@ -18,6 +18,7 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final EmailService emailService;
     private final String randomUserEndpointUrl = "https://randomuser.me/api";
     private final WebClient webClient = WebClient.create(randomUserEndpointUrl);
     private final ModelMapper modelMapper;
@@ -53,7 +54,7 @@ public class UserService {
         Optional<User> existingUser = userRepository.findByPhoneOrCell(user.getPhone(), user.getCell()).stream().findFirst();
         existingUser.ifPresent(userToUpdate -> {
             user.setId(userToUpdate.getId());
-
+            emailService.sendEmail(user.toString());
         });
         userRepository.save(user);
     }
